@@ -2,6 +2,9 @@
 @section('content')
     <h1>Update Stock</h1>
     {!! Form::model($stock,['method' => 'PATCH','route'=>['stocks.update',$stock->id]]) !!}
+
+
+
     <div class="form-group">
         {!! Form::label('symbol', 'Symbol:') !!}
         {!! Form::text('symbol',null,['class'=>'form-control']) !!}

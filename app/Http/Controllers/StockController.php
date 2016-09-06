@@ -65,6 +65,7 @@ class StockController extends Controller
         $stock= new Stock($request->all());
         $stock=Stock::find($id);
         $stock->update($request->all());
+
         return redirect('stocks');
     }
 
