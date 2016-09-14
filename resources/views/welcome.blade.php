@@ -4,6 +4,7 @@
         <title>Laravel</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
         <style>
             html, body {
@@ -30,8 +31,10 @@
                 display: inline-block;
             }
 
+
+
             .title {
-                font-size: 96px;
+                font-size: 150px;
             }
         </style>
     </head>
@@ -39,7 +42,32 @@
         <div class="container">
             <div class="content">
                 <div class="title">Steam Financial </div>
+
+                <div class="w3-container">
+                    <ul class="w3-navbar w3-black">
+
+                        <li><a href="http://localhost/efs/public/customers">Customers</a></li>
+                        <li><a href="http://localhost/efs/public/stocks">Stocks</a></li>
+                        <li><a href="http://localhost/efs/public/investments">Investments</a></li>
+                        <li><a herf="http://localhost/efs/">Public</a></li>
+                    </ul>
+                </div>
+
             </div>
+
+
         </div>
+
+
+
+
+
+
+
     </body>
+
+
 </html>
+
+
+

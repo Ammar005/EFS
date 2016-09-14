@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Investment;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Customer;
+use App\Stock;
+use Illuminate\Support\Facades\DB;
 
 class CustomerController extends Controller
 {
@@ -19,7 +22,12 @@ class CustomerController extends Controller
     public function show($id)
     {
         $customer = Customer::findOrFail($id);
-        return view('customers.show',compact('customer'));
+        $stocks= Stock::where('customer_id', $id)->get();
+        $investments= Investment::where('customer_id',$id)->get();
+
+        $StockTotal= Stock::select(DB::raw('sum(purchase_price) as price_total'))->first();
+
+        return view('customers.show',compact('customer', 'stocks','investments','StockTotal'));
     }
 
 
