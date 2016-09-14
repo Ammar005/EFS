@@ -4,7 +4,7 @@
         <title>Laravel</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href=/w3.css">
+        <link rel="stylesheet" href="/css/w3.css">
 
         <style>
             html, body {
