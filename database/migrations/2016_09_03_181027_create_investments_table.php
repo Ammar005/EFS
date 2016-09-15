@@ -17,7 +17,7 @@ class CreateInvestmentsTable extends Migration
             $table->increments('id');
             $table->string('category');
             $table->string('description');
-            $table->integer('Acquired_Value');
+            $table->integer('acquired_value');
             $table->date('Acquired_Date');
             $table->float('Recent_Value');
             $table->date('Recent_Date');

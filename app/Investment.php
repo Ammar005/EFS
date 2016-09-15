@@ -11,7 +11,7 @@ class Investment extends Model
     	'customer_id',
     	'category',
     	'description',
-        'Acquired_Value',
+        'acquired_value',
         'Acquired_Date',
         'Recent_Value',
         'Recent_Date',
