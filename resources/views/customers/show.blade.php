@@ -104,6 +104,8 @@
 
         <p>Total of Initial investment:{{$InvestmentTotal->total_investment}}</P>
 
+        <p>Portfolio : {{$InvestmentTotal->total_investment + $StockTotal->price_total}}</p>
+
 
     </div>
 
