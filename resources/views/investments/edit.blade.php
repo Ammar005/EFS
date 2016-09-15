@@ -12,7 +12,7 @@
     </div>
     <div class="form-group">
         {!! Form::label('Acquired_Value', 'Acquired Value:') !!}
-        {!! Form::text('Acquired_Value',null,['class'=>'form-control']) !!}
+        {!! Form::text('acquired_value',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::label('Acquired_Date', 'Acquired Date:') !!}

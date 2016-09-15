@@ -25,7 +25,7 @@
                 <td>{{$investment->customer->name }}</td>
                 <td>{{$investment->category}}</td>
                 <td>{{$investment->description}}</td>
-                <td>{{$investment->Acquired_Value}}</td>
+                <td>{{$investment->acquired_value}}</td>
                 <td>{{$investment->Acquired_Date}}</td>
                 <td>{{$investment->Recent_Value}}</td>
                 <td>{{$investment->Recent_Date}}</td>

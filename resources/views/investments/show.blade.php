@@ -16,7 +16,7 @@
             </tr>
             <tr>
                 <td>Acquired Value</td>
-                <td><?php echo ($investment['Acquired_Value']); ?></td>
+                <td><?php echo ($investment['acquired_value']); ?></td>
             </tr>
             <tr>
                 <td>Acquired Date </td>
