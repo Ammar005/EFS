@@ -102,7 +102,7 @@
             </tbody>
         </table>
 
-        <p>Total of Initial investment:{{$InvestmentTotal}}</P>
+        <p>Total of Initial investment:{{$InvestmentTotal->total_investment}}</P>
 
 
     </div>
