@@ -52,7 +52,7 @@
                 <th>Symbol</th>
                 <th>Name</th>
                 <th>Shares</th>
-                <th>Purchase Price</th>
+                <th>Purchase price</th>
                 <th>Purchase Date</th>
             </tr>
             </thead>
@@ -70,7 +70,7 @@
         </table>
 
 
-        <p>Total price: {{ '$' . $StockTotal->price_total}}</p>
+        <p>Total price: {{$StockTotal->price_total}}</p>
 
     </div>
 
@@ -101,6 +101,9 @@
             @endforeach
             </tbody>
         </table>
+
+        <p>Total of Initial investment:{{$InvestmentTotal->total_investment}}</P>
+        <p>Portifolio : {{$InvestmentTotal->total_investment + $StockTotal->price_total}}</p>
 
     </div>
 
