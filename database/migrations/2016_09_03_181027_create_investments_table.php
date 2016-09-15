@@ -17,10 +17,10 @@ class CreateInvestmentsTable extends Migration
             $table->increments('id');
             $table->string('category');
             $table->string('description');
-            $table->integer('Acquired_Value');
-            $table->date('Acquired_Date');
-            $table->float('Recent_Value');
-            $table->date('Recent_Date');
+            $table->integer('acquired_value');
+            $table->date('acquired_date');
+            $table->float('recent_value');
+            $table->date('recent_date');
             $table->integer('customer_id')->unsigned();
             $table->timestamps();
         });
