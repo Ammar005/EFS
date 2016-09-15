@@ -27,7 +27,7 @@ class CustomerController extends Controller
         $investments= Investment::where('customer_id',$id)->get();
 
         $StockTotal= Stock::select(DB::raw('sum(purchase_price) as price_total'))->first();
-        $InvestmentTotal= Investment::select(DB::raw('sum(Acquired_Value) as total_investment'))->first();
+        $InvestmentTotal= Investment::select(DB::raw('sum(acquired_value) as total_investment'))->first();
 
         return view('customers.show',compact('customer', 'stocks','investments','StockTotal', 'InvestmentTotal'));
     }
