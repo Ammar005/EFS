@@ -47,14 +47,14 @@
         <div class="w3-container">
             <ul class="w3-navbar w3-black w3-xlarge">
 
-                <li><a href="http://localhost/efs/public/login">Login</a></li>
-                <li><a href="http://localhost/efs/public/register">Register</a></li>
-                <li><a href="http://localhost/efs/public/logout"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                
-                <li><a href="https://steam-financials-service.herokuapp.com/customers">Customers</a></li>
-                <li><a href="http://steam-financials-service.herokuapp.com/stocks">Stocks</a></li>
-                <li><a href="http://steam-financials-service.herokuapp.com/investments">Investments</a></li>
+                <li><a href="customers">Customers</a></li>
+                <li><a href="stocks">Stocks</a></li>
+                <li><a href="investments">Investments</a></li>
                 <li><a href="index.php">Home</a></li>
+
+                <li><a href="login">Login</a></li>
+                <li><a href="register">Register</a></li>
+                <li><a href="logout"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
 
 
 
