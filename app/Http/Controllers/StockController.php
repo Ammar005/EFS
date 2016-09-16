@@ -74,4 +74,9 @@ class StockController extends Controller
         Stock::find($id)->delete();
         return redirect('stocks');
     }
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }

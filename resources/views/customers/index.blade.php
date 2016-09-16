@@ -35,7 +35,18 @@
                 <td><a href="{{url('customers',$customer->id)}}" class="btn btn-primary">Read</a></td>
                 <td><a href="{{route('customers.edit',$customer->id)}}" class="btn btn-warning">Update</a></td>
                 <td>
-                    {!! Form::open(['method' => 'DELETE', 'route'=>['customers.destroy', $customer->id]]) !!}
+                    <script>
+                    function ConfirmDelete() {
+                    var x = confirm("Are you sure you want to delete? If yes, be sure of deleting customer's stocks and investments before proceeding");
+                    if (x)
+                        return true;
+                    else
+                        return false;
+                    }
+                    </script>
+
+
+                    {!! Form::open(['method' => 'DELETE', 'route'=>['customers.destroy', $customer->id],'onsubmit' => 'return ConfirmDelete()']) !!}
                     {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                     {!! Form::close() !!}
                 </td>

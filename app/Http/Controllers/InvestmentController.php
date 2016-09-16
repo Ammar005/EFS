@@ -73,6 +73,10 @@ class InvestmentController extends Controller
         return redirect('investments');
     }
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 
 

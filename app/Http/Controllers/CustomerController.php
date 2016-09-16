@@ -85,7 +85,10 @@ class CustomerController extends Controller
         $customer = $customer->toArray();
         return response()->json($customer);
     }
-
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 
 }
